@@ -1,0 +1,32 @@
+//fonts
+$mainFont: 'Roboto', sans-serif;
+
+//colors
+$bronze: #B68A60;
+
+//media
+
+$lg: 1429px;
+$md: 1199px;
+$sm: 991px;
+$xs: 767px;
+
+// mixins
+
+@mixin placeholderColor($color) {
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+  &::placeholder {
+    color: $color;
+  }
+}
