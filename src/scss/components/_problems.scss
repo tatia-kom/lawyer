@@ -176,11 +176,9 @@
   }
 
   &__comment-title {
-    background: linear-gradient(108.22deg, #B88C62 6.89%, #A07246 90.52%);
-    font-size: 18px;
+    font-weight: 900;
+    font-size: 24px;
     line-height: 40px;
-    padding: 8px 16px;
-    display: inline-block;
   }
 
   &__comment {
@@ -190,6 +188,7 @@
     padding: 16px;
     background: #212121;
     box-shadow: 0px 40px 250px rgba(182, 138, 96, 0.4);
+    margin-top: 8px;
 
     @media (max-width: $xs) {
       font-size: 16px;

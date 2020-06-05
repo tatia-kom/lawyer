@@ -1,19 +1,4 @@
 $(document).ready(function() {
-    $('.header-submenu').click(function(e) {
-        e.stopPropagation();
-
-        if ($(this).hasClass('header-submenu--opened')) {
-            $(this).removeClass('header-submenu--opened');
-        }
-        else {
-            $('.header-submenu').removeClass('header-submenu--opened');
-            $(this).addClass('header-submenu--opened');
-        }
-    });
-
-    $('body').click(function() {
-        $('.header-submenu').removeClass('header-submenu--opened');
-    });
 
     // mobile menu
 

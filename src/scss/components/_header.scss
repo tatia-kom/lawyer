@@ -223,7 +223,7 @@
     width: 100%;
   }
 
-  &--opened {
+  &:hover {
     background: linear-gradient(1.43deg, rgba(0, 0, 0, 0.9) -3.46%, rgba(182, 138, 96, 0.648) 173.88%);
     box-shadow: 0px 40px 250px rgba(182, 138, 96, 0.4);
 
