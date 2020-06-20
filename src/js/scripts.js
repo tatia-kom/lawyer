@@ -44,8 +44,13 @@ $(document).ready(function() {
 
     $('.open-modal').click(function(e) {
         e.preventDefault();
-        $('.modal').addClass('modal--opened');
+        $('#formModal').addClass('modal--opened');
         $('body').addClass('frozen');
+    });
+
+    $('.modal__close').click(function() {
+        $('.modal').removeClass('modal--opened');
+        $('body').removeClass('frozen');
     });
 
     $('.modal').click(function() {
@@ -57,4 +62,11 @@ $(document).ready(function() {
         e.stopPropagation();
     });
 });
+
+// функция для открытия модального окна Спасибо
+
+function openThanksModal() {
+    $('#thanksModal').addClass('modal--opened');
+    $('body').addClass('frozen');
+}
 

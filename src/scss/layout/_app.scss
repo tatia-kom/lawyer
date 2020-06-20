@@ -142,6 +142,39 @@ footer {
         }
     }
 
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        display: block;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: black;
+            width: 20px;
+            height: 1px;
+            transform: rotate(-45deg);
+            top: 10px;
+            left: 0;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background: black;
+            width: 20px;
+            height: 1px;
+            transform: rotate(45deg);
+            top: 10px;
+            left: 0;
+        }
+    }
+
     &__form {
         display: flex;
         flex-direction: column;
@@ -165,6 +198,13 @@ footer {
             font-size: 24px;
             line-height: 30px;
         }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 20px;
+        color: black;
+        text-align: center;
     }
 
     &__input {

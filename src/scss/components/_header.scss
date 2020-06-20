@@ -108,6 +108,11 @@
 
   &__messenger {
     margin-left: 16px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     @media (max-width: $lg) {
       position: absolute;

@@ -282,8 +282,8 @@
                     <div class="header-contacts">
                         <a href="mailto:" class="header-contacts__email">mail@mail.ru</a>
                         <a href="tel:" class="header-contacts__phone">8 495 700-70-70</a>
-                        <a href="#" class="header-contacts__messenger"><img src="img/tg-icon.svg" alt="" /></a>
-                        <a href="#" class="header-contacts__messenger"><img src="img/wa-icon.svg" alt="" /></a>
+                        <a href="#" class="header-contacts__messenger"><img src="img/tg-icon-color.svg" alt="" /></a>
+                        <a href="#" class="header-contacts__messenger"><img src="img/wa-icon-color.svg" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -296,9 +296,11 @@
 
 </div>
 
-    <div class="modal">
+    <div class="modal" id="formModal">
         <div class="modal__content">
             <form class="modal__form">
+                <span class="modal__close"></span>
+
                 <p class="modal__title">Заказать<br />звонок</p>
 
                 <input type="text" placeholder="Ваше имя" class="modal__input" />
@@ -310,6 +312,18 @@
                 </label>
 
                 <button type="submit" class="modal__button">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="thanksModal">
+        <div class="modal__content">
+            <form class="modal__form">
+                <span class="modal__close"></span>
+
+                <p class="modal__title">Спасибо!</p>
+                <p class="modal__text">Ваша заявка отправлена и в ближайшее время будет рассмотрена.</p>
+
             </form>
         </div>
     </div>
