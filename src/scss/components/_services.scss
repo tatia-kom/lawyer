@@ -1,0 +1,161 @@
+@import "layout/var";
+
+.services {
+  padding-top: 250px;
+  padding-bottom: 400px;
+
+  @media (max-width: $sm) {
+    padding-top: 150px;
+  }
+
+  @media (max-width: $xs) {
+    padding-top: 100px;
+  }
+
+  &__dots {
+    position: absolute;
+    left: -173px;
+    bottom: calc(70px + 150px);
+  }
+
+  &__dots2 {
+    position: absolute;
+    left: 1076px;
+    bottom: calc(-113px + 150px);
+  }
+
+  &__content {
+    margin-top: 60px;
+    position: relative;
+
+    @media (max-width: $xs) {
+      margin-top: 30px;
+    }
+  }
+
+  &__tab {
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+
+    &--active {
+      position: relative;
+      opacity: 1;
+    }
+  }
+}
+
+.services-tabs {
+  display: flex;
+  justify-content: center;
+  border: 1px solid $bronze;
+  margin: 60px auto 0;
+  width: 500px;
+
+  @media (max-width: $xs) {
+    flex-direction: column;
+    width: 290px;
+    margin-top: 30px;
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 16px 0;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    @media (max-width: $xs) {
+      width: 100%;
+    }
+
+    &:hover {
+      color: $bronze;
+    }
+
+    &--active {
+      background: linear-gradient(109.77deg, #B88C62 6.89%, #A07246 90.52%);
+      cursor: default;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.services-list {
+  margin-right: 347px;
+
+  @media (max-width: $md) {
+    margin-right: 275px;
+  }
+
+  @media (max-width: $sm) {
+    margin-right: 150px;
+  }
+
+  @media (max-width: $xs) {
+    margin-right: 0;
+  }
+
+  &__item {
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 16px;
+
+    @media (max-width: $xs) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &:nth-child(odd) {
+      background: linear-gradient(89.64deg, #B88C62 0.79%, rgba(196, 196, 196, 0) 100.51%);
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.services-right {
+  position: absolute;
+  right: 0;
+  top: 2987px;
+
+  @media (max-width: 1549px) {
+    top: 3100px;
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+
+    img {
+      margin-right: -200px;
+    }
+  }
+
+  @media (max-width: $md) {
+    top: auto;
+    bottom: 950px;
+
+    img {
+      margin-right: -300px;
+    }
+  }
+
+  @media (max-width: $sm) {
+    bottom: 1000px;
+
+    img {
+      margin-right: -400px;
+    }
+  }
+
+  @media (max-width: $xs) {
+    display: none;
+  }
+}

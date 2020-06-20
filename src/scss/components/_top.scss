@@ -6,6 +6,17 @@
   height: 921px;
   position: relative;
 
+  &--absolute {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+    @media (max-width: $xs) {
+      height: 400px!important;
+    }
+  }
+
   @media (max-width: $sm) {
     height: 600px;
   }

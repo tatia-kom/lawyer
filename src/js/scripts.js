@@ -29,15 +29,13 @@ $(document).ready(function() {
         animateOut: 'fadeOut'
     });
 
-    // video slider
+    // services tabs
 
-    $('.video-slider').addClass('owl-carousel');
-    $('.video-slider').owlCarousel({
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: true,
-        animateOut: 'fadeOut'
+    $('.services-tabs__item').click(function() {
+        $('.services-tabs__item--active').removeClass('services-tabs__item--active');
+        $('.services__tab--active').removeClass('services__tab--active');
+        $(this).addClass('services-tabs__item--active');
+        $($(this).attr('data-tab')).addClass('services__tab--active');
     });
 
     // modal

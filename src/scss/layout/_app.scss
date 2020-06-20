@@ -28,6 +28,7 @@ header, footer, section, div, span, p, button, a, input, textarea, form {
 
 button,input,textarea,select{
     outline: none;
+    font-family: $mainFont, sans-serif;
 }
 button {
     padding: 0;
@@ -58,6 +59,39 @@ footer {
 
 .bg {
     background: linear-gradient(111.36deg, #000000 42.38%, #B68A60 133.83%);
+    overflow: hidden;
+    position: relative;
+
+    &--page {
+        padding-top: 180px;
+        min-height: 100vh;
+
+        @media (max-width: $xs) {
+            padding-top: 0;
+        }
+
+        .problems-left {
+            top: 265px;
+            z-index: 2;
+            display: block!important;
+
+            &--contacts {
+                @media (max-width: 1500px) {
+                    display: none!important;
+                }
+            }
+
+            @media (max-width: $xs) {
+                display: none!important;
+            }
+        }
+
+        .problems-dots {
+            top: 1500px;
+            right: auto;
+            z-index: 2;
+        }
+    }
 }
 
 
