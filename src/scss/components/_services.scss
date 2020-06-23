@@ -51,6 +51,8 @@
   border: 1px solid $bronze;
   margin: 60px auto 0;
   width: 500px;
+  position: relative;
+  z-index: 101;
 
   @media (max-width: $xs) {
     flex-direction: column;
@@ -87,25 +89,16 @@
 }
 
 .services-list {
-  margin-right: 347px;
-
-  @media (max-width: $md) {
-    margin-right: 275px;
-  }
-
-  @media (max-width: $sm) {
-    margin-right: 150px;
-  }
-
-  @media (max-width: $xs) {
-    margin-right: 0;
-  }
+  //margin-right: 347px;
+  position: relative;
+  z-index: 1;
 
   &__item {
     display: block;
     font-size: 24px;
     line-height: 28px;
     padding: 16px;
+    background: linear-gradient(90.81deg, #D18B48 36.27%, rgba(196, 196, 196, 0) 100.51%);
 
     @media (max-width: $xs) {
       font-size: 18px;
@@ -126,10 +119,10 @@
   position: absolute;
   right: 0;
   top: 2987px;
+  z-index: 100;
 
   @media (max-width: 1549px) {
     top: 3100px;
-    width: 100%;
     overflow: hidden;
     text-align: right;
 

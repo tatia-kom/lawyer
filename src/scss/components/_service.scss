@@ -4,8 +4,8 @@
   display: flex;
   align-items: flex-start;
   position: relative;
-  z-index: 1;
-  margin-top: 122px;
+  z-index: 3;
+  margin-top: 70px;
 
   @media (max-width: $sm) {
     margin-top: 50px;
@@ -54,6 +54,13 @@
 
     &:hover {
       text-decoration: underline;
+    }
+
+    &--active {
+      font-weight: bold;
+      color: $bronze;
+      cursor: default;
+      pointer-events: none;
     }
   }
 
