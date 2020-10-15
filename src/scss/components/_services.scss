@@ -118,11 +118,10 @@
 .services-right {
   position: absolute;
   right: 0;
-  top: 2987px;
+  top: 900px;
   z-index: 100;
 
   @media (max-width: 1549px) {
-    top: 3100px;
     overflow: hidden;
     text-align: right;
 
@@ -132,12 +131,7 @@
   }
 
   @media (max-width: $md) {
-    top: auto;
-    bottom: 950px;
-
-    img {
-      margin-right: -300px;
-    }
+    display: none;
   }
 
   @media (max-width: $sm) {

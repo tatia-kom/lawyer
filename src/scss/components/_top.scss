@@ -18,7 +18,7 @@
   }
 
   @media (max-width: $sm) {
-    height: 600px;
+    height: 670px;
   }
 
   @media (max-width: $xs) {
@@ -86,13 +86,17 @@
   }
 
   &__button {
-    margin-top: 60px;
+    margin-top: 15px;
     background: linear-gradient(105.22deg, #B88C62 6.89%, #A07246 90.52%);
     font-size: 18px;
     line-height: 21px;
     color: white;
     cursor: pointer;
-    width: 250px;
+    width: 320px;
     height: 70px;
+
+    @media (max-width: $xs) {
+      max-width: 100%;
+    }
   }
 }

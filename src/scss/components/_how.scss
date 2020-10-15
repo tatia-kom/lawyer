@@ -2,10 +2,14 @@
 
 .how {
   overflow: hidden;
-  margin-top: -155px;
+  margin-top: 150px;
+
+  @media (max-width: $sm) {
+    margin-top: 100px;
+  }
 
   @media (max-width: $xs) {
-    margin-top: -300px;
+    //margin-top: -300px;
   }
 
   &__blocks {
